@@ -17,9 +17,14 @@ h1   { font-size: 24px; font-size: 2.4rem; } =24px
 	--color-black: #000;
 	--color-white: #fff;
 
-	--text-primary: #3d3d3d;
+	/* Button Color */
+	--button-primary: hsl(176, 50%, 47%);
 
-	--border-light: rgb(184, 184, 184);
+	--text-primary: #3d3d3d;
+	--text-light: hsl(0, 0%, 48%);
+	--text-teal: hsl(176, 50%, 47%);
+
+	--border-light: rgb(211, 211, 211);
 }
 
 * {
@@ -30,7 +35,7 @@ h1   { font-size: 24px; font-size: 2.4rem; } =24px
 
 html {
 	font-size: 62.5%;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Commissioner', sans-serif;
 }
 
 .container {
@@ -134,4 +139,191 @@ a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+}
+
+.hero__main--card {
+	position: relative;
+	top: -120px;
+	left: 0;
+	background-color: var(--color-white);
+	border-radius: 5px;
+	outline-style: var(--border-light) solid 1px;
+	box-shadow: 0 0 3px var(--border-light);
+	height: 0 auto;
+	width: 100%;
+	padding: 0 2rem;
+}
+
+#hero__main-image1 {
+	position: relative;
+	top: -30px;
+	left: 0;
+}
+
+.hero__main-content {
+	text-align: center;
+}
+
+.hero__main-content p {
+	text-align: center;
+	font-size: 1.3rem;
+	color: var(--text-light);
+	padding: 2rem 0 2rem 0;
+}
+
+.btn {
+	background-color: var(--button-primary);
+	font-weight: 700;
+	border-radius: 5rem;
+	color: white;
+	padding: 2rem 2rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.5rem;
+	width: 23rem;
+}
+
+.hero__main-content .hero__main--contentButtons {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 2rem 0 4rem 0;
+}
+
+.hero__main-bookmark {
+	margin-left: 12%;
+}
+
+/* Hero Stats Section */
+.hero__stats-card {
+	display: grid;
+	outline-style: var(--border-light) solid 1px;
+	box-shadow: 0 0 3px var(--border-light);
+	border-radius: 5px;
+	height: 0 auto;
+	padding: 3rem;
+	justify-content: center;
+	text-align: center;
+	margin-top: -7rem;
+}
+
+.hero__stats-card h1 {
+	font-size: 3.5rem;
+	padding: 2rem 0 1rem 0;
+}
+
+.hero__stats-card span {
+	color: var(--text-light);
+	font-size: 1.5rem;
+}
+
+.hero__stats--hr {
+	display: grid;
+	place-items: center;
+	width: 68%;
+	margin: 2.5rem 10% 0.5rem 15%;
+	height: 1px;
+	background-color: var(--border-light);
+}
+
+.hero__stats--statusbar {
+	box-sizing: content-box;
+	height: 1.5rem; /* Can be anything */
+	position: relative;
+	margin: 3rem 0 2rem 0; /* Just for demo spacing */
+	width: 30rem;
+	background-color: var(--border-light);
+	border-radius: 25px;
+}
+.hero__stats--statusbar > span {
+	display: block;
+	height: 100%;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: var(--button-primary);
+}
+
+.hero__about--section {
+	background-color: var(--color-white);
+	border-radius: 5px;
+	outline-style: var(--border-light) solid 1px;
+	box-shadow: 0 0 3px var(--border-light);
+	height: 0 auto;
+	width: 100%;
+	margin: 2rem 0 2rem 0;
+	padding: 3rem 2rem;
+}
+
+.hero__about--content h1 {
+	padding-bottom: 2rem;
+	font-size: 2.2rem;
+}
+
+.hero__about--content p {
+	color: var(--text-light);
+	font-size: 1.5rem;
+	padding: 1rem 0 1rem 0;
+}
+
+/* Crowdfund Cards */
+
+.about__crowdfund--card {
+	background-color: var(--color-white);
+	border-radius: 5px;
+	outline-style: var(--border-light) solid 1px;
+	box-shadow: 0 0 3px var(--border-light);
+	height: 0 auto;
+	width: 100%;
+	padding: 2rem 2rem;
+	margin: 2rem 0 2rem 0;
+}
+
+.about__crowdfund--card h1 {
+	font-weight: bold;
+	font-size: 3rem;
+	margin-bottom: 0.5rem;
+}
+
+.about__crowdfund--card h3 {
+	font-weight: bold;
+	font-size: 1.4rem;
+	margin-bottom: 0.5rem;
+}
+
+.about__crowdfund--card span {
+	color: var(--text-teal);
+	font-weight: normal;
+	font-size: 1.2rem;
+}
+
+h1 .about__crowdfund-left-span {
+	vertical-align: middle;
+	color: var(--text-light);
+}
+
+.about__crowdfund--card p {
+	padding: 2rem 0;
+	color: var(--text-light);
+	font-size: 1.3rem;
+}
+
+.about__crowdfund--cardButton {
+	background-color: var(--button-primary);
+	font-weight: 500;
+	border-radius: 5rem;
+	color: white;
+	padding: 1.5rem;
+	margin: 1.5rem 0 1rem 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.5rem;
+	width: 15rem;
+}
+
+.out-of-stock {
+	background-color: rgb(209, 209, 209);
 }
