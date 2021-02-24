@@ -327,3 +327,54 @@ h1 .about__crowdfund-left-span {
 .out-of-stock {
 	background-color: rgb(209, 209, 209);
 }
+
+/* Crowdfund Start Modal */
+.backThisProject__popup-modal {
+	background-color: var(--color-white);
+	border-radius: 5px;
+	outline-style: var(--border-light) solid 1px;
+	box-shadow: 0 0 3px var(--border-light);
+	height: 0 auto;
+	width: 90%;
+	margin: 2rem;
+	padding: 3rem 2rem;
+}
+
+.backThisProject__popup--content {
+}
+
+.backThisProject__popup--content h2 {
+	font-weight: 700;
+}
+
+.backThisProject__popup--content blockquote {
+	color: var(--text-light);
+	font-size: 1.3rem;
+	font-weight: normal;
+	margin: 2rem 0 2rem 0;
+}
+
+.backThisProject__popup--card {
+	background-color: var(--color-white);
+	border-radius: 5px;
+	outline-style: var(--border-light) solid 1px;
+	box-shadow: 0 0 3px var(--border-light);
+	height: 0 auto;
+	width: 100%;
+	padding: 2rem 2rem;
+	margin: 2rem 0 2rem 0;
+}
+
+.backThisProject__popup--card,
+input,
+span {
+	justify-content: center;
+	vertical-align: middle;
+	padding: 2rem;
+}
+
+.backThisProject__popup--card blockquote {
+	color: var(--text-light);
+	font-size: 1.3rem;
+	margin: 2rem 0;
+}

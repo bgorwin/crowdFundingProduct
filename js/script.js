@@ -9,11 +9,13 @@ function openNavigation() {
 	}
 }
 
-// function navHamburger(x) {
-// 	x.classList.toggle('change');
-// }
+// Crowdfund Modal Start Bamboo Stand
+// function openModal() {
+// 	const startCrowdfundModal = document.getElementById('crowdfund__popup-start');
 
-// function closeNavigation() {
-// 	const navModal = document.getElementById('nav__menu--popup');
-// 	navModal.style.display = 'none';
+// 	if (startCrowdfundModal.style.display === 'none') {
+// 		startCrowdfundModal.stytle.display = 'block';
+// 	} else {
+// 		startCrowdfundModal.style.display = 'none';
+// 	}
 // }
