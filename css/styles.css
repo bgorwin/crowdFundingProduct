@@ -67,33 +67,6 @@ a {
 	padding: 0;
 }
 
-.bar1,
-.bar2,
-.bar3 {
-	width: 2.5rem;
-	height: 0.3rem;
-	background-color: var(--color-white);
-	margin: 0.6rem 0;
-	transition: 0.4s;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-	transform: rotate(-45deg) translate(-8px, 5px);
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-	opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-	-webkit-transform: rotate(45deg) translate(-8px, -8px);
-	transform: rotate(45deg) translate(-7px, -5px);
-}
-
 /* Popup Navigation Modal */
 .nav__menu--modal {
 	display: none;
@@ -182,6 +155,7 @@ a {
 	display: inline-block;
 	font-size: 1.5rem;
 	width: 23rem;
+	cursor: pointer;
 }
 
 .hero__main-content .hero__main--contentButtons {
@@ -193,6 +167,17 @@ a {
 
 .hero__main-bookmark {
 	margin-left: 12%;
+}
+
+.hero__bookmark-extended {
+	position: relative;
+	top: 0;
+	left: 65px;
+	border: none;
+	border-radius: 30px;
+	padding: 0 5rem 0 6.5rem;
+	width: 15rem;
+	display: none;
 }
 
 /* Hero Stats Section */
@@ -221,8 +206,8 @@ a {
 .hero__stats--hr {
 	display: grid;
 	place-items: center;
-	width: 68%;
-	margin: 2.5rem 10% 0.5rem 15%;
+	/* width: 68%; */
+	margin: 2.5rem 37% 0.5rem 38%;
 	height: 1px;
 	background-color: var(--border-light);
 }
@@ -552,4 +537,88 @@ input {
 	display: inline-block;
 	font-size: 1.5rem;
 	width: 12rem;
+}
+
+/* Media Queries */
+
+/* Table --> Desktop: 768px to 1440 */
+
+@media only screen and (min-width: 768px) {
+	.hero__image--mobile {
+		background-image: url('/images/image-hero-desktop.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.container {
+		margin: 0 auto;
+		max-width: 55rem;
+	}
+
+	.hero__main--h1-br {
+		display: none;
+	}
+
+	.btn {
+		font-size: 1.5rem;
+		font-weight: 500;
+		padding: 1.2rem;
+	}
+
+	.hero__main-content .hero__main--contentButtons {
+		justify-content: space-between;
+		width: 85%;
+		padding-left: 2%;
+		height: 10.5rem;
+		font-weight: 400;
+	}
+
+	.hero__bookmark-extended {
+		display: block;
+		color: var(--text-light);
+		font-weight: 700;
+	}
+
+	.hero__main-bookmark {
+		position: relative;
+		top: 0;
+		left: 110px;
+		z-index: 1;
+		height: 4.5rem;
+	}
+
+	/* Hero Stats Section */
+
+	.hero__stats-card {
+		justify-content: left;
+	}
+
+	.hero__stats-content {
+		display: flex;
+		width: 1%;
+	}
+
+	.hero__stats-content h1 {
+		font-size: 2.5rem;
+		padding: 1rem 1rem;
+	}
+
+	.hero__stats--statusbar {
+		margin-top: 3rem;
+	}
+
+	.hero__stats-sections {
+		justify-items: left;
+		margin-right: 8rem;
+	}
+
+	.hero__stats-content .hero__stats-sections span {
+		font-size: 1rem;
+		justify-content: left;
+	}
+
+	.hero__stats--statusbar {
+		width: 95%;
+	}
 }
