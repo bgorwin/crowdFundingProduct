@@ -118,7 +118,7 @@ a {
 }
 
 .hero__image--mobile {
-	background-image: url('/images/image-hero-mobile.jpg');
+	background-image: url('https://bgorwin.github.io/crowdFundingProduct/images/image-hero-mobile.jpg');
 	height: 30rem;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -556,7 +556,7 @@ input {
 
 @media only screen and (min-width: 768px) {
 	.hero__image--mobile {
-		background-image: url('/images/image-hero-desktop.jpg');
+		background-image: url('https://bgorwin.github.io/crowdFundingProduct/images/image-hero-desktop.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
