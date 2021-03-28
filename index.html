@@ -19,17 +19,23 @@
 		<title>Frontend Mentor | Crowdfunding product page</title>
 	</head>
 	<body>
-		<nav class="container">
-			<div>
+		<div>
+			<nav>
 				<li><a href="#" class="nav__logo">crowdfund</a></li>
-			</div>
-			<div
-				class="nav__hamburger--menu"
-				id="nav__hamburger--menu"
-				onclick="(openNavigation())"
-			>
-				<img src="/images/icon-hamburger.svg" alt="hamburger icon" />
-			</div>
+				<ul class="nav_menu">
+					<li class="nav__menu-list">About</li>
+					<li class="nav__menu-list">Discover</li>
+					<li class="nav__menu-list">Get Started</li>
+				</ul>
+
+				<div
+					class="nav__hamburger--menu"
+					id="nav__hamburger--menu"
+					onclick="(openNavigation())"
+				>
+					<img src="/images/icon-hamburger.svg" alt="hamburger icon" />
+				</div>
+			</nav>
 
 			<div class="nav__menu--modal container" id="nav__menu--popup">
 				<div class="nav__menu--content">
@@ -41,7 +47,7 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</div>
 
 		<section class="hero__image">
 			<div class="hero__image--mobile"></div>
@@ -306,7 +312,6 @@
 				</button>
 			</div>
 		</div>
-
 		<!-- Success modal end -->
 		<script src="js/script.js"></script>
 	</body>
