@@ -152,7 +152,9 @@
 							included.
 						</p>
 						<h1>64 <span class="about__crowdfund-left-span">left</span></h1>
-						<a class="about__crowdfund--cardButton" href="#">Select Reward</a>
+						<button class="about__crowdfund--cardButton" href="#">
+							Select Reward
+						</button>
 					</div>
 
 					<div class="about__crowdfund--card">
@@ -172,9 +174,9 @@
 			</div>
 		</main>
 
-		<!-- Back This Product Modal Popup -->
+		<!-- Bamboo Stand Modal Popup -->
 		<div class="backThisProject__popup-modal" id="backThisProject__popup-modal">
-			<div class="backThisProject__popup--content">
+			<div class="backThisProject__popup--content container">
 				<div class="backThisProject__popup-heading">
 					<h2>Back this project</h2>
 					<span>
@@ -193,7 +195,11 @@
 				<div class="backThisProject__popup--card">
 					<div class="pledge__radio-text">
 						<div class="backThisProject__popup--radio">
-							<input type="radio" class="no-reward--input" />
+							<input
+								type="radio"
+								class="no-reward--input"
+								name="backThisProject"
+							/>
 							<div class="popup-radio--text">
 								<p>Pledge with no reward</p>
 							</div>
@@ -210,7 +216,7 @@
 				<div class="backThisProject__popup--card selectedProject">
 					<div class="pledge__radio-text">
 						<div class="backThisProject__popup--radio">
-							<input type="radio" checked />
+							<input type="radio" name="backThisProject" checked />
 							<div class="popup-radio--text">
 								<p>Bamboo Stand</p>
 
@@ -249,7 +255,7 @@
 				<div class="backThisProject__popup--card">
 					<div class="pledge__radio-text">
 						<div class="backThisProject__popup--radio">
-							<input type="radio" id="withNoReward" />
+							<input type="radio" id="withNoReward" name="backThisProject" />
 
 							<div class="popup-radio--text">
 								<p>Black Stand Edition</p>
@@ -269,7 +275,7 @@
 				<div class="backThisProject__popup--card">
 					<div class="pledge__radio-text">
 						<div class="backThisProject__popup--radio">
-							<input type="radio" id="withNoReward" />
+							<input type="radio" id="withNoReward" name="backThisProject" />
 
 							<div class="popup-radio--text">
 								<p>Mahogany Special Edition</p>
@@ -296,7 +302,7 @@
 
 		<!-- Success modal start -->
 		<div class="backThisProject__popup-modal" id="thankYouModalPopup">
-			<div class="backThisProject__modal--thankYou">
+			<div class="backThisProject__modal--thankYou container">
 				<img
 					src="https://bgorwin.github.io/crowdFundingProduct/images/icon-check.svg"
 					alt="checkmark"
